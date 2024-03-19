@@ -1,0 +1,18 @@
+﻿Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+Function.Intrinsic.UI.UsePixels ' Allows you to use Pixels instead of Twips throughout
+'Launch PCC.exe from GSS Menu
+
+V.Local..BulkDeclareLong(iPID)
+Function.Intrinsic.Control.If(V.Caller.Pervasive,"=",True)
+	F.Intrinsic.Task.LaunchAsync("PCC.exe",1,V.Local.iPID)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Main.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$jwithrow$}$20220324154518117$}$D95tSYIikIvF+oq+s87EtBQePACEH+EyDs2gPmW3WNpjemgNvIPWYFS6FCXh5hwu8k8mEGl0tiKoxIz6M3qSRA==
+Program.Sub.Comments.End
